@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int FILE_PICKER_REQUEST_CODE = 1;
     private String docPath;
-    private static final String ROOT_URL = "https://royalreview.website/doctor/wp-json/api/v1/add_doctor_alldocuments";
+    private static final String ROOT_URL = "https://yourwebsite.website/app/wp-json/api/v1/alldocuments";
     File file;
     private String docFileName;
     TextView txt_path,txt_filename,upload_doc;
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
 
             AndroidNetworking.upload(url)
                     .addMultipartFile("doc_file", file)
-                    .addMultipartParameter("id", "402")
+                    .addMultipartParameter("id", "2")
                     .addMultipartParameter("doc_name", docFileName)
                     .setPriority(Priority.MEDIUM)
                     .setPriority(Priority.MEDIUM)
